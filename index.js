@@ -54,7 +54,7 @@ function startGulp(name, opts) {
 
   opts = opts || {};
   var browser = !opts.skipBrowser;
-  var fullname = name ? 'fcash-' + name : 'fcore';
+  var fullname = name ? 'fcash-' + name : 'fcash-base';
   var files = ['lib/**/*.js'];
   var tests = ['test/**/*.js'];
   var alljs = files.concat(tests);
