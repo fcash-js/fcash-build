@@ -14,9 +14,9 @@ and use and require in your gulp file:
 
 ```javascript
 var gulp = require('gulp');
-var bitcoreTasks = require('fcash-build');
+var fcoreTasks = require('fcash-build');
 
-bitcoreTasks('submodule');
+fcoreTasks('submodule');
 gulp.task('default', ['lint', 'test', 'browser', 'coverage']);
 ```
 
@@ -25,17 +25,17 @@ gulp.task('default', ['lint', 'test', 'browser', 'coverage']);
 * There's no default task to allow for each submodule to set up their own configuration
 * If the module is node-only, avoid adding the browser tasks with:
 ```javascript
-var bitcoreTasks = require('fcash-build');
-bitcoreTasks('submodule', {skipBrowsers: true});
+var fcoreTasks = require('fcash-build');
+fcoreTasks('submodule', {skipBrowsers: true});
 ```
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/fcash-project/bitcore) on the main fcore repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/fcash-project/fcore) on the main fcore repo for information about how to contribute.
 
 ## License
 
 Code released under [the MIT license](https://github.com/fcash-project/fcore/blob/master/LICENSE).
 
-Copyright 2015 BitPay, Inc. Fcash is a trademark maintained by BitPay, Inc.
+Copyright 2015 Fcash, Inc. Fcash is a trademark maintained by Fcash, Inc.
 

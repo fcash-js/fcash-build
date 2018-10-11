@@ -11,24 +11,24 @@
     "url": "git://github.com/fcash-project/fcash-build"
   },
   "keywords": [
-    "bitcore"
+    "fcore"
   ],
   "contributors": [
     {
       "name": "Esteban Ordano",
-      "email": "esteban@bitpay.com"
+      "email": "esteban@fcash.cash"
     },
     {
       "name": "Manuel Araoz",
-      "email": "maraoz@bitpay.com"
+      "email": "maraoz@fcash.cash"
     },
     {
       "name": "Braydon Fuller",
-      "email": "braydon@bitpay.com"
+      "email": "braydon@fcash.cash"
     },
     {
       "name": "Yemel Jardi",
-      "email": "yemel@bitpay.com"
+      "email": "yemel@fcash.cash"
     },
     {
       "name": "Matias Alejo Garcia",

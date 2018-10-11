@@ -54,7 +54,7 @@ function startGulp(name, opts) {
 
   opts = opts || {};
   var browser = !opts.skipBrowser;
-  var fullname = name ? 'fcash-' + name : 'bitcore';
+  var fullname = name ? 'fcash-' + name : 'fcore';
   var files = ['lib/**/*.js'];
   var tests = ['test/**/*.js'];
   var alljs = files.concat(tests);
@@ -320,7 +320,7 @@ function startGulp(name, opts) {
   });
 
   gulp.task('release:push', function(cb) {
-    git.push('bitpay', 'master', {
+    git.push('fcash', 'master', {
       args: ''
     }, cb);
   });
@@ -329,7 +329,7 @@ function startGulp(name, opts) {
     var pjson = require('../../package.json');
     var name = 'v' + pjson.version;
     git.tag(name, 'Release ' + name, function() {
-      git.push('bitpay', name, cb);
+      git.push('fcash', name, cb);
     });
   });
 
@@ -354,7 +354,7 @@ function startGulp(name, opts) {
       browser ? 'browser' : 'noop',
       // Commit 
       'release:build-commit',
-      // Run git push bitpay $VERSION
+      // Run git push fcash $VERSION
       'release:push-tag',
       // Run npm publish
       'release:publish',
