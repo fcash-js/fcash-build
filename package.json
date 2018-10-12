@@ -1,6 +1,6 @@
 {
   "name": "fcash-build",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A helper for common tasks to build fcash-base modules'",
   "main": "index.js",
   "scripts": {
